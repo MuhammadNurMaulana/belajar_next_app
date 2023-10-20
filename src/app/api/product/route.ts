@@ -2,25 +2,29 @@ import { NextRequest, NextResponse } from "next/server";
 
 type Data = {
   id: number;
-  name: string;
+  title: string;
   price: number;
+  image: string;
 }[];
 
 const data: Data = [
   {
     id: 1,
-    name: "Sepatu lama",
+    title: "Sepatu lama",
     price: 100000,
+    image: "/logo.ico",
   },
   {
     id: 2,
-    name: "Sepatu kedua",
+    title: "Sepatu kedua",
     price: 200000,
+    image: "/logo.ico",
   },
   {
     id: 3,
-    name: "Sepatu ketiga",
+    title: "Sepatu ketiga",
     price: 300000,
+    image: "/logo.ico",
   },
 ];
 

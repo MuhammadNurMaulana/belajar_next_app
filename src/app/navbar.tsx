@@ -17,6 +17,9 @@ export default function Navbar() {
         <Link href={"/product"} className={`${pathname === "/product" ? "text-yellow-500" : ""}`}>
           Product
         </Link>
+        <Link href={"/dasboard"} className={`${pathname === "/dasboard" ? "text-yellow-500" : ""}`}>
+          Dasboard Admin
+        </Link>
         <Link href={"/about/profile"} className={`${pathname === "/about/profile" ? "text-yellow-500" : ""}`}>
           Profile
         </Link>
