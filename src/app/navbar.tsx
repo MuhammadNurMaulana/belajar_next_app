@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const pathname = usePathname();
+
   return (
     <div className="flex items-center gap-12 p-4 bg-slate-800 text-white">
       <h1>Navbar</h1>
