@@ -7,19 +7,6 @@ interface SlugProps {
   };
 }
 
-// fetching lewat api luar
-// async function getDataFakeStore() {
-//   const res = await fetch("https://fakestoreapi.com/products", {
-//     cache: "no-store",
-//   });
-
-//   if (!res.ok) {
-//     throw new Error("Failed to data fetch");
-//   }
-
-//   return res.json();
-// }
-
 // fetching dengan next api local
 async function getDataFakeStore() {
   const res = await fetch("http://localhost:3000/api/product", {

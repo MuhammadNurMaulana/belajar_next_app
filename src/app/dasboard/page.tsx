@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 
-export default async function AdminPahe() {
-  const [status, setStatus] = useState<string>("");
+export default function AdminPage() {
+  const [status, setStatus] = useState("");
   const revalidate = async () => {
     const res = await fetch("http://localhost:3000/api/revalidate?tag=products&secret=12345", {
       method: "POST",
@@ -11,12 +11,13 @@ export default async function AdminPahe() {
     if (!res.ok) {
       setStatus("failed");
     } else {
-      const response = await res.json();
-      if (response.revalidate) {
+      const respn = await res.json();
+      if (respn) {
         setStatus("success");
       }
     }
   };
+
   return (
     <div>
       <h1>Admin Page</h1>
